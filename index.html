@@ -9,17 +9,62 @@
             margin:0px;
             padding:0px;
         }
+        body{
+            background:url('../Projeto-redes-sociais/imagens/fundo1.jpg') no-repeat top center;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        main{
+            height:100vh;
+            position: relative;
+        }
+        section#telefone{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            background:url(../Projeto-redes-sociais/imagens/frame-iphone.png) no-repeat;
+            height: 610px;
+            width: 311px;
+        }
         img#fundo{
             width:100vw;
         }
-        img#telefone{
-            width:300px;
-            height:600px;
+        iframe#tela{
+            position: relative;
+            top: 80px;
+            left: 22px;
+            width: 269px;
+            height: 471px;
+        }
+        section#redes-sociais img{
+            margin:10px;
+            margin-left: 20px;
+            width:50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+        }
+        section#redes-sociais img:hover{
+            border: 2px solid rgba(255, 255, 255, 0.637);
+            transform: translate(-3px1 -3px); 
+            box-shadow: 5px 5px 10 px rgba(0, 0, 0, 0.623);
+            transition: transform .3s, border 1s;
         }
     </style>
 </head>
 <body>
-    <img id="fundo" src="imagens/fundo1.jpg" alt="fundo1">
-    <img id="telefone" src="imagens/Moto g.jpg" alt="foto do celular">
+    <main>
+        <section id="telefone">
+            <iframe src="imagens/tela-home.jpg" name="tela" id="tela" frameborder="0"></iframe>
+        </section>
+        
+        <section>
+            <iframe src="https://www.linkedin.com/in/felipe-andrade-pereira-63a2b4274/" frameborder="0"></iframe>
+            <iframe src="" frameborder="0"></iframe>
+            <iframe src="" frameborder="0"></iframe>
+            <iframe src="" frameborder="0"></iframe>
+        </section>
+    </main>
 </body>
 </html>
